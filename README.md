@@ -1,59 +1,93 @@
-# CrudAngularMaterial
+## Cadastro de Clientes com Angular e Angular Material
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Este projeto é um sistema de cadastro e consulta de clientes, desenvolvido com Angular e Angular Material. Os dados são armazenados no navegador via `localStorage`, e o sistema conta com integração à [BrasilAPI](https://brasilapi.com.br) para seleção dinâmica de estados e municípios.
 
-## Development server
+---
 
-To start a local development server, run:
+### Conhecimentos adquiridos
 
+- Criação de projetos com Angular CLI.
+- Estrutura de componentes e rotas no Angular.
+- Utilização de Angular Material para UI responsiva.
+- Criação e estilização de formulários com validação.
+- Aplicação de máscaras em campos de formulário.
+- Feedback ao usuário com `MatSnackBar`.
+- Armazenamento de dados no `localStorage`.
+- Implementação de CRUD completo (Create, Read, Update, Delete).
+- Consumo de APIs externas (BrasilAPI).
+- Injeção de dependência e criação de serviços.
+- Manipulação de parâmetros de rota para edição de registros.
+
+---
+
+### Tecnologias utilizadas
+
+- Angular CLI - v19.0.2
+- Angular Material
+- Flex Layout
+- UUID
+- Ngx-Mask
+- BrasilAPI
+- TypeScript
+- HTML / SCSS
+- LocalStorage
+- Postman
+- VS Code
+
+---
+
+### Estrutura do Projeto
+
+- `cadastro/cliente.ts`: Modelo de cliente com geração de ID único e atributos como nome, CPF, data de nascimento, e localização.
+- `cadastro.component.ts/html`: Formulário de cadastro com campos dinâmicos, máscaras e integração com BrasilAPI.
+- `consulta.component.ts/html`: Tabela de consulta com filtros, edição e exclusão de clientes.
+- `cliente.service.ts`: Serviço responsável por salvar, atualizar, buscar e deletar clientes.
+- `brasilapi.service.ts`: Serviço para consumir estados e municípios via BrasilAPI.
+- `app.routes.ts`: Configuração de rotas para navegação entre componentes.
+- `styles.scss`: Estilos globais reutilizáveis para espaçamentos e largura.
+
+---
+
+### Como executar o projeto
+
+Siga os passos abaixo para rodar o projeto localmente.
 ```bash
+# Clonar o repositório
+git clone https://github.com/xXezi/crud-angular-material.git
+
+# Acessar a pasta do projeto
+cd crud-angular-material
+
+# Instalar as dependências
+npm install
+
+# Executar o servidor
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Depois, abra o navegador e acesse: http://localhost:4200  
+A aplicação será recarregada automaticamente sempre que você modificar os arquivos-fonte.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Layout do projeto
 
-```bash
-ng generate component component-name
-```
+### Tela inicial
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+![Home](https://github.com/xXezi/crud-angular-material/blob/main/src/assets/img/home.png)
 
-```bash
-ng generate --help
-```
+### Formulário de cadastro
 
-## Building
+![Formulário](https://github.com/xXezi/crud-angular-material/blob/main/src/assets/img/cadastro1.png)
+![Formulário](https://github.com/xXezi/crud-angular-material/blob/main/src/assets/img/cadastro2.png)
+![Formulário](https://github.com/xXezi/crud-angular-material/blob/main/src/assets/img/cadastro3.png)
 
-To build the project run:
+### Consulta de clientes
 
-```bash
-ng build
-```
+![Consulta](https://github.com/xXezi/crud-angular-material/blob/main/src/assets/img/consulta.png)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+### Informações adicionais
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[Documentação oficial do Angular](https://angular.dev/overview).
