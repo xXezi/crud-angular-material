@@ -26,7 +26,6 @@ Este projeto é um sistema de cadastro e consulta de clientes, desenvolvido com 
 - Angular Material
 - Flex Layout
 - UUID
-- Ngx-Mask
 - BrasilAPI
 - TypeScript
 - HTML / SCSS
