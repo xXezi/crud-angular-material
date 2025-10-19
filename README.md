@@ -78,3 +78,4 @@ A aplicação será recarregada automaticamente sempre que você modificar os ar
 ### Documentações úteis
 
 [Documentação Angular](https://angular.dev/overview).
+[Documentação Angular Material](https://material.angular.dev/).
