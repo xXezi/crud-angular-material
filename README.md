@@ -35,18 +35,6 @@ Este projeto é um sistema de cadastro e consulta de clientes, desenvolvido com 
 
 ---
 
-### Estrutura do Projeto
-
-- `cadastro/cliente.ts`: Modelo de cliente com geração de ID único e atributos como nome, CPF, data de nascimento, e localização.
-- `cadastro.component.ts/html`: Formulário de cadastro com campos dinâmicos, máscaras e integração com BrasilAPI.
-- `consulta.component.ts/html`: Tabela de consulta com filtros, edição e exclusão de clientes.
-- `cliente.service.ts`: Serviço responsável por salvar, atualizar, buscar e deletar clientes.
-- `brasilapi.service.ts`: Serviço para consumir estados e municípios via BrasilAPI.
-- `app.routes.ts`: Configuração de rotas para navegação entre componentes.
-- `styles.scss`: Estilos globais reutilizáveis para espaçamentos e largura.
-
----
-
 ### Como executar o projeto
 
 Siga os passos abaixo para rodar o projeto localmente.
@@ -87,6 +75,6 @@ A aplicação será recarregada automaticamente sempre que você modificar os ar
 
 ---
 
-### Informações adicionais
+### Documentações úteis
 
-[Documentação oficial do Angular](https://angular.dev/overview).
+[Documentação Angular](https://angular.dev/overview).
